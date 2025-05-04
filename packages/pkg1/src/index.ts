@@ -1,1 +1,2 @@
-export * from './lib/pkg1.js';
+export * from './lib/unfolding/unfold-node-schema';
+export * from './lib/unfolding/unfold-property';

@@ -2,9 +2,20 @@
   "name": "@unfolding/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build": "nx run-many --target=build --all --parallel",
+    "lint": "nx run-many --target=lint --all --parallel",
+    "test": "nx run-many --target=test --all --parallel",
+    "test:watch": "nx run-many --target=test --all --parallel --watch",
+    "test:coverage": "nx run-many --target=test:coverage --all --parallel",
+    "test:ui": "nx run-many --target=test:ui --all --parallel",
+    "local-registry": "nx local-registry"
+  },
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "mobx": "^6.13.7",
+    "rxjs": "^7.8.2"
+  },
   "devDependencies": {
     "@eslint/js": "^9.8.0",
     "@nx/eslint": "20.8.1",
